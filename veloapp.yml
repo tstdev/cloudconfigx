@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://ec2-79-125-12-48.eu-west-1.compute.amazonaws.com:5432/dctskct3i644p5?sslmode=require&user=vqtgujwkunyjvc&password=c88301931603a2c70708908ee1d642ee5ede245e27bbf3046f1e84e56f573a99
+    driverClassName: org.postgresql.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    timeBetweenEvictionRunsMillis: 3600000
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  jadira:
+    usertype:
+      autoRegisterUserTypes: true
+  boot:
+    admin:
+      client:
+        url: https://veloadmintest.herokuapp.com/
+
+management:
+  security:
+    enabled: false
