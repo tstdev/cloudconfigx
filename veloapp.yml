@@ -25,3 +25,8 @@ spring:
 management:
   security:
     enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eurekavelo.herokuapp.com/eureka
