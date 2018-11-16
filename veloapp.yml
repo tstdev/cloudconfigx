@@ -30,3 +30,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: https://eurekavelo.herokuapp.com/eureka
+    healthcheck:
+      enabled: true
